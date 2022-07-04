@@ -1,0 +1,64 @@
+.userGuideMask, .userGuideModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  padding: 10px; }
+
+.userGuideModalHeader {
+  margin: 0; }
+
+.userGuideModalContent {
+  max-width: 500px;
+  margin: 35vh auto;
+  padding: 25px;
+  background-color: #fff; }
+
+.userGuideMessage {
+  position: absolute;
+  top: -10000px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #eee; }
+  .userGuideMessage:after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(45deg); }
+  .userGuideMessageTitle {
+    margin: 0 0 5px; }
+  .userGuideMessageBody {
+    margin: 0 0 15px; }
+  .userGuideMessageeast:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -5px;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee; }
+  .userGuideMessagewest:after {
+    right: -6px;
+    top: 50%;
+    margin-top: -5px;
+    border-right: 1px solid #eee;
+    border-top: 1px solid #eee; }
+  .userGuideMessagenorth {
+    text-align: center; }
+    .userGuideMessagenorth:after {
+      left: 50%;
+      bottom: -6px;
+      margin-left: -5px;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee; }
+  .userGuideMessagesouth {
+    text-align: center; }
+    .userGuideMessagesouth:after {
+      left: 50%;
+      top: -6px;
+      margin-left: -5px;
+      border-left: 1px solid #eee;
+      border-top: 1px solid #eee; }
